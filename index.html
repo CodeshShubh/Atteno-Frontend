@@ -13,7 +13,7 @@
   
      <script>
             "serviceWorker"in navigator && window.addEventListener("load", (()=>{
-                navigator.serviceWorker.register("./serviceworker.js").then((e=>{
+                navigator.serviceWorker.register("/serviceworker.js").then((e=>{
                     console.log("Service Worker registered:", e)
                 }
                 )).catch((e=>{
