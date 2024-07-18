@@ -10,48 +10,48 @@
     "description":"ATTENO is Attendence app for mange Drivers Data and Attendance.",
     "icons":[
     {
-    "src":"./public/ico-192x192.png",                     
+    "src":"/ico-192x192.png",                     
     "sizes":"192x192",
     "type":"image/png"
     },
     {
-    "src":"./public/ico-512x512.png",
+    "src":"/ico-512x512.png",
     "sizes":"512x512",
     "type":"image/png"
     },
     {
-    "src":"./public/ico-72x72.png",
+    "src":"/ico-72x72.png",
     "sizes":"72x72",
     "type":"image/png"
     },
     {
-    "src":"./public/ico-96x96.png",
+    "src":"/ico-96x96.png",
     "sizes":"96x96",
     "type":"image/png"
     },
     {
-    "src":"./public/ico-128x128.png",
+    "src":"/ico-128x128.png",
     "sizes":"128x128",
     "type":"image/png"
     },
     {
-    "src":"./public/ico-144x144.png",
+    "src":"/ico-144x144.png",
     "sizes":"144x144",
     "type":"image/png"
     },
     {
-    "src":"./public/ico-152x152.png",
+    "src":"/ico-152x152.png",
     "sizes":"152x152",
     "type":"image/png"
     },
     {
-    "src":"./public/ico-384x384.png",
+    "src":"/ico-384x384.png",
     "sizes":"384x384",
     "type":"image/png"
     },
     
       {
-      "src": "./public/ico-512x512.png",
+      "src": "/ico-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"

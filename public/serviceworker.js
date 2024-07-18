@@ -1,8 +1,8 @@
 var cacheAll = false;
 var CACHE_NAME = 'atteno-v1';
 var urlsToCache = [
-    './public/ico-192x192.png',
-    './public/ico-512x512.png',
+    '/ico-192x192.png',
+    '/ico-512x512.png',
 ];
 var urlsNotToCache = [];
 
