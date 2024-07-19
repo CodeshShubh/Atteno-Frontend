@@ -28,16 +28,35 @@ const AddDrivers = () => {
   const handleChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
+
+    let cleanedValue = value;
+
+    // Clean mobile number input by removing any whitespace
+    if (name === 'mobileNumber') {
+      cleanedValue = value.replace(/\s+/g, '');
+    }
     setFormData({
       ...formData,
-      [name]: value
+      [name]: cleanedValue
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Clean mobile number input by removing any non-digit characters
+    const cleanedMobileNumber = formData.mobileNumber.replace(/\D/g, '');
+
+    if (cleanedMobileNumber.length !== 10) {
+      toast.error("Please enter a valid 10-digit mobile number");
+      return;
+    }
+    const cleanedFormData = {
+      ...formData,
+      mobileNumber: cleanedMobileNumber
+    };
+
     try {
-      const response = await axios.post(`${server}/admin/Addnewdriver`, formData, {
+      const response = await axios.post(`${server}/admin/Addnewdriver`, cleanedFormData, {
         headers: {
           'Content-Type': 'application/json'
         }
