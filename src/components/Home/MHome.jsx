@@ -10,7 +10,7 @@ const MHome = () => {
   const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
-      setRefresh(prev => !prev); // Toggle state to force re-render
+      setRefresh(prev => !prev);  //Toggle state to force re-render
   }, []);
   return (
     <MainNavBarContainer>
@@ -67,7 +67,7 @@ margin-top: 3rem;
   border-radius: 5px 20px 20px 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 
-}
+   }
 
 }
 
@@ -111,7 +111,6 @@ margin-top: 3rem;
   }
 }
 `
-
 export const OrangeButton = styled.button`
 display: flex;
 justify-content: center;
