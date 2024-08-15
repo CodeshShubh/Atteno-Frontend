@@ -41,14 +41,14 @@ const [attendanceData, setAttendanceData] = useState([]);
       const monthRecord = yearRecord.AttendanceRecords[0].months.find(m => m.name === month);
       if (monthRecord) {
         setAttendanceData(monthRecord.days);
-        console.log(`Attendance data for ${month}/${year}:`, monthRecord.days);
+        // console.log(`Attendance data for ${month}/${year}:`, monthRecord.days);
       } else {
         setAttendanceData([]);
-        console.log(`No attendance data found for month: ${month}`);
+        // console.log(`No attendance data found for month: ${month}`);
       }
     } else {
       setAttendanceData([]);
-      console.log(`No attendance data found for year: ${year}`);
+      // console.log(`No attendance data found for year: ${year}`);
     }
   };
   useEffect(() => {
@@ -134,7 +134,7 @@ const [attendanceData, setAttendanceData] = useState([]);
                const dayStatus = attendanceData.find(d => d.day === day)?.status;
                const isPresent = dayStatus === "present";
                const isAbsent = dayStatus === "absent";
-               console.log(`Day: ${day}, Status: ${dayStatus}`);
+              //  console.log(`Day: ${day}, Status: ${dayStatus}`);
 
             return(
               <Day className='Day' 
