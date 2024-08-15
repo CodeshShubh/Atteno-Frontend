@@ -13,7 +13,7 @@ const DriverBranch = () => {
   }, []);
     const { AdminUser } = useSelector((state) => state.AdminLogin);
     const Drivers = AdminUser?.getalldrivers || [];
-    console.log(Drivers);
+    // console.log(Drivers);
       // Group drivers by branchName
   const groupedDrivers = Drivers.reduce((acc, driver) => {
     if (!acc[driver.branchName]) {
