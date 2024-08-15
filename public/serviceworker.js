@@ -1,4 +1,4 @@
-const CURRENT_CACHE_NAME = 'atteno-v1.1'; // Update this version when you make changes
+const CURRENT_CACHE_NAME = 'atteno-v1.2'; // Update this version when you make changes
 const urlsToCache = [
     '/ico-192x192.png',
     '/ico-512x512.png',
